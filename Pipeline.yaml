@@ -32,6 +32,6 @@ steps:
     inputs:
       azureSubscription: 'azure-connection'  # Replace with your Azure DevOps service connection
       appType: 'webAppLinux'
-      appName: 'Vikasyoutube'                   # Replace with your Azure Web App name
+      appName: 'shadabyoutube'                   # Replace with your Azure Web App name
       package: '$(System.DefaultWorkingDirectory)/build'
       runtimeStack: 'STATICSITE|1.0'
