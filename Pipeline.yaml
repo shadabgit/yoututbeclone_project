@@ -2,7 +2,7 @@ trigger:
   - main  # or your branch name
 
 pool:
-  name: MySelfHostedPool # ✅ Your self-hosted agent name
+  name: shadabselfhostedagent # ✅ Your self-hosted agent name
 
 steps:
   # Step 1: Install dependencies
@@ -30,7 +30,7 @@ steps:
   - task: AzureWebApp@1
     displayName: 'Deploy to Azure Web App'
     inputs:
-      azureSubscription: 'azure-connection'  # Replace with your Azure DevOps service connection
+      azureSubscription: 'shadabsvccon'  # Replace with your Azure DevOps service connection
       appType: 'webAppLinux'
       appName: 'shadabyoutube'                   # Replace with your Azure Web App name
       package: '$(System.DefaultWorkingDirectory)/build'
